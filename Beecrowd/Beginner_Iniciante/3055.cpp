@@ -1,15 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-int main(){
-
-    int A, M, B;
-
+int main()
+{
+    int A, M;
     cin>>A>>M;
-
-    B=(M*2)-A;
-
-    cout<<B<<endl;
+    M=M*2;
+    cout<<M-A<<endl;
     return 0;
 }

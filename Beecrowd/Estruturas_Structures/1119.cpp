@@ -7,14 +7,11 @@ int main(){
     int N, k, m;
     cin>>N>>k>>m;
     while(N && k && m){
-
         bitset<20> cand;
-        //Marca os valores fora do intervalo
         cand.set(0);
         for(int i=N+1; i<20; i++){
             cand.set(i);
         }
-        ////////////////////////////////////
         int i=0, j=N+1;
         int virg=0;
         while(!cand.all()){
@@ -33,7 +30,7 @@ int main(){
                 }
             }
 
-            //Imprime vírgula se já saiu algum valor
+
             if(virg) cout<<",";
             virg++;
 
@@ -45,16 +42,17 @@ int main(){
                 cand.set(i);
                 cand.set(j);
             }
-            else{
+            if(i==j){
                 if(i>9)printf(" %d", i);
                 else printf("  %d", i);
                 cand.set(i);
             }
+
         }
-        cout<<"\n";
+        cout<<endl;
+
+
 
         cin>>N>>k>>m;
     }
-
-    return 0;
 }
