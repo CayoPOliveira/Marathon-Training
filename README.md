@@ -4,7 +4,7 @@
 
 ## ABSTRACT
 
-In 2020, during the pandemic, I focused my studies on the programming marathon of the Brazilian Society of Computing (SBC), in 2021 my pace decreased due to the pace of college, but I participated in both 2020 and 2021. Beecrowd platform, formerly called URI Online Judge.
+In 2020, during the pandemic, I focused my studies on the programming marathon of the Brazilian Society of Computing (SBC), in 2021 my pace decreased due to the pace of college, but I participated in both 2020 and 2021. Here you can find my codes, especially from Beecrowd platform, previously called URI Online Judge.
 
 ## RESUMO
 
