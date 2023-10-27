@@ -1,33 +1,34 @@
-#include <iostream>
-#include <set>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    string traz ={"Chirrin"};
-    string vai = {"Chirrion"};
-    int n;
-    cin>>n;
-    while(n--){
-        set<string> st;
-        int m;
-        cin>>m;
-        while(m--){
-            char c;
-            string coisa;
-            string magica;
-            cin>>coisa>>magica;
-            if(magica=="chirrin"){
-                st.insert(coisa);
-                //cout<<"a";
+int main()
+{
+    int N;
+    cin >> N;
+    while (N--)
+    {
+        set<string> s;
+        string a, b;
+        int k;
+        cin >> k;
+        while (k--)
+        {
+            cin >> a >> b;
+            if (b == "chirrin")
+            {
+                s.insert(a);
             }
-            if(magica=="chirrion"){
-                if(st.find(coisa)!=st.end()) st.erase(coisa);
+            if (b == "chirrion")
+            {
+                auto it = s.find(a);
+                if (it != s.end())
+                    s.erase(it);
             }
         }
-        cout<<"TOTAL"<<endl;
-        for(set<string>::iterator it = st.begin(); it!=st.end(); it++){
-            cout<<*it<<endl;
+        cout << "TOTAL\n";
+        for (auto it = s.begin(); it != s.end(); ++it)
+        {
+            cout << *it << "\n";
         }
     }
 }
